@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cost: 1
+  value: 1
+  total: 1
+  roi: 
+
+two:
+  cost: 1
+  value: 1
+  total: 1
+  roi: 

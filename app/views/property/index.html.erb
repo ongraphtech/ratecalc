@@ -1,0 +1,23 @@
+	<div class="span5">
+	<%= form_tag "/property/calc" , remote: true, class: "form form-horizontal" do %>
+		 <div class="control-group">
+		<%= label_tag 'total', "Square Feet", class: 'control-label' %>
+		<%= number_field_tag 'total', nil, min: 1, class: 'form-control'%>
+		 </div>
+		 <div class="control-group">
+		<%= label_tag 'cost', "Cost to buy property", class: 'control-label' %>
+		<%= number_field_tag 'cost', nil, min: 1,class: 'form-control'%>
+		  </div>
+		 <div class="control-group">
+		<%= label_tag 'value', "Sale value of the property", class: 'control-label' %>
+		<%= number_field_tag 'value', nil, min: 1,class: 'form-control'%>
+		  </div>
+		 <div class="control-group">
+		<%= submit_tag "Calculate", class: 'btn btn-success pull-right' %>
+		 </div>
+	<% end %>
+	<br/>
+	<div id="message" class="well hidden">
+		
+	</div> 
+</div>
