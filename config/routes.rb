@@ -1,4 +1,5 @@
 Ratecalc::Application.routes.draw do
+  root :to => 'property#index'
   get "property/index"
   post "property/calc"
 
